@@ -12,6 +12,10 @@ I created the library to debug a linkage error I saw on macOS: `___isOSVersionAt
 The code fails to link now, but you may remove macOS version test from `lib.c` to make it work.
 
 
+We assume you have Xcode commanline tools and `konanc` in PATH
+
+
+
 Releted Work
 ============
 
