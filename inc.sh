@@ -10,7 +10,7 @@ ar rcs lib.a lib.o
 gcc -mmacosx-version-min=10.10 -c  main.c -o main.o
 
 
-//the fix is to call `clang -mmacosx-version-min=10.10` instead.
+## the fix is to call `clang -mmacosx-version-min=10.10` instead.
 ld -macosx_version_min 10.10  -lc  main.o lib.a
 
 
