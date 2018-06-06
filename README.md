@@ -1,23 +1,22 @@
-Static native library sameple
-=============================
-
+Static Native Library Sample
+============================
 
 The repository demonstrates a minimal possible static library,
-whick is used from 
+which is used from 
  - Kotlin/Native (`in.sh`)
- - `main.c` (`inc.sh`)
+ - C (`inc.sh`)
 
-I created the library to debug a linkage error I saw on macOS: `___isOSVersionAtLeast`.
+I created the library to debug the linkage error I saw on 
+macOS: `___isOSVersionAtLeast`. See blog posts below for more details.
 
-The code fails to link now, but you may remove macOS version test from `lib.c` to make it work.
+The code fails to link now, you may see the linkage error I have. You may fix that by removing macOS version
+test from `lib.c`.
+
+We assume you have Xcode commanline and `konanc` in PATH.
 
 
-We assume you have Xcode commanline tools and `konanc` in PATH
-
-
-
-Releted Work
-============
+Blog Posts and Details
+======================
 
 You may find more information on my blog:
 
